@@ -1,8 +1,17 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'cv-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent { }
+export class AppComponent {
+  constructor(private translateService: TranslateService) {
+    this.translateService.setDefaultLang('en');
+  }
+
+  setLanguage(newLang: string): void {
+    this.translateService.use(newLang);
+  }
+}
