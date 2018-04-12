@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
+import {AuthService} from './auth/auth.service';
 
 @Component({
   selector: 'cv-root',
@@ -10,13 +11,16 @@ export class AppComponent {
   slideValue = 100;
   root = document.querySelector(':root');
 
-  constructor(private translateService: TranslateService) {
-    this.translateService.setDefaultLang('en');
+  constructor(private translateService: TranslateService,
+              public authService: AuthService) {
+    translateService.setDefaultLang('en');
+    authService.handleAuthentication();
   }
 
   setLanguage(newLang: string): void {
     this.translateService.use(newLang);
   }
+
   onFontSizeChanged(newValue: number): void {
     newValue /= 10;
     console.log(newValue);
@@ -24,5 +28,4 @@ export class AppComponent {
     this.root['style'].setProperty('--font-size', newValue + 'px');
     // root.style.setProperty('--line-height', newValue + 'px');
   }
-
 }

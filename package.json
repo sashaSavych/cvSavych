@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 2203",
     "build": "ng build",
     "lint": "ng lint"
   },
@@ -21,6 +21,7 @@
     "@angular/router": "^5.0.0",
     "@ngx-translate/core": "^9.0.2",
     "@ngx-translate/http-loader": "^2.0.1",
+    "auth0-js": "^9.4.2",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
     "primeng": "^5.2.0",

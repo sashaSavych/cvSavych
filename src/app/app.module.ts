@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LeftPanelComponent } from './components/left-panel/left-panel.component';
@@ -12,6 +13,10 @@ import { RightPanelComponent } from './components/right-panel/right-panel.compon
 
 import {ToggleButtonModule} from 'primeng/togglebutton';
 import {SliderModule} from 'primeng/slider';
+
+import {AuthService} from './auth/auth.service';
+import {ROUTES} from './app.routing';
+import { LoginComponent } from './components/login/login.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -21,10 +26,12 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     LeftPanelComponent,
-    RightPanelComponent
+    RightPanelComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,
+    RouterModule.forRoot(ROUTES),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -35,7 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     // primeng
     ToggleButtonModule, SliderModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
