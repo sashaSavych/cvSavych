@@ -13,8 +13,8 @@ export class AppComponent {
 
   constructor(private translateService: TranslateService,
               public authService: AuthService) {
-    translateService.setDefaultLang('en');
-    authService.handleAuthentication();
+    // translateService.setDefaultLang('en');
+    // authService.handleAuthentication();
   }
 
   setLanguage(newLang: string): void {

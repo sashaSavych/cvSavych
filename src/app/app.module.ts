@@ -17,6 +17,8 @@ import {SliderModule} from 'primeng/slider';
 import {AuthService} from './auth/auth.service';
 import {ROUTES} from './app.routing';
 import { LoginComponent } from './components/login/login.component';
+import { CounterComponent } from './components/language-switcher/language-switcher.component';
+import {AppStoreProviders} from './app.store';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -27,7 +29,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     LeftPanelComponent,
     RightPanelComponent,
-    LoginComponent
+    LoginComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,
@@ -42,7 +45,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     // primeng
     ToggleButtonModule, SliderModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, AppStoreProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
