@@ -19,6 +19,7 @@ import {ROUTES} from './app.routing';
 import { LoginComponent } from './components/login/login.component';
 import { CounterComponent } from './components/language-switcher/language-switcher.component';
 import {AppStoreProviders} from './app.store';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -30,7 +31,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     LeftPanelComponent,
     RightPanelComponent,
     LoginComponent,
-    CounterComponent
+    CounterComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,
