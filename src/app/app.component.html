@@ -1,5 +1,9 @@
 <!--<button (click)="authService.logout()">logout</button>-->
 <cv-language-switcher></cv-language-switcher>
+<p-gmap [options]="{
+            center: {lat: 48.1351, lng: 11.5820},
+            zoom: 5
+        }" [style]="{'width':'70%','height':'750px'}" [overlays]="overlays" ></p-gmap>
 <router-outlet></router-outlet>
 
 <!--

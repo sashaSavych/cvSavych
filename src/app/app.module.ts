@@ -11,8 +11,10 @@ import { AppComponent } from './app.component';
 import { LeftPanelComponent } from './components/left-panel/left-panel.component';
 import { RightPanelComponent } from './components/right-panel/right-panel.component';
 
+// primeNG
 import {ToggleButtonModule} from 'primeng/togglebutton';
 import {SliderModule} from 'primeng/slider';
+import {GMapModule} from 'primeng/gmap';
 
 import {AuthService} from './auth/auth.service';
 import {ROUTES} from './app.routing';
@@ -45,7 +47,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     }),
     // primeng
-    ToggleButtonModule, SliderModule
+    ToggleButtonModule, SliderModule, GMapModule
   ],
   providers: [AuthService, AppStoreProviders],
   bootstrap: [AppComponent]
