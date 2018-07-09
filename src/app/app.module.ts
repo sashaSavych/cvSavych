@@ -27,8 +27,9 @@ import { AboutComponent } from './components/right-panel/about/about.component';
 import { SkillsComponent } from './components/right-panel/skills/skills.component';
 import { ExperienceComponent } from './components/right-panel/experience/experience.component';
 import { EducationComponent } from './components/right-panel/education/education.component';
-import { ContactComponent } from './components/right-panel/contact/contact.component';
+import { ContactsComponent } from './components/right-panel/contacts/contacts.component';
 import { SocialComponent } from './components/right-panel/social/social.component';
+import { ParamsPanelComponent } from './components/params-panel/params-panel.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -45,8 +46,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     SkillsComponent,
     ExperienceComponent,
     EducationComponent,
-    ContactComponent,
-    SocialComponent
+    ContactsComponent,
+    SocialComponent,
+    ParamsPanelComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,

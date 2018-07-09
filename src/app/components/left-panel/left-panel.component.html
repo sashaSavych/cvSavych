@@ -1,6 +1,6 @@
 <div>
   <div class="content">
-    <div class="my-name">Oleksandr Savych</div>
+    <div class="my-name">{{'leftPanel.name' | translate}}</div>
     <!--Profile image-->
     <figure>
       <img src="../../../assets/img/profile.jpg" alt=""/>
@@ -10,23 +10,23 @@
     <div class="main-navigation-menu">
       <div class="menu-navigation-item" [routerLink]="['/about']" [routerLinkActive]="['active']">
         <i class="fa fa-user"></i>
-        <span>about</span>
+        <span>{{'leftPanel.about' | translate}}</span>
       </div>
       <div class="menu-navigation-item" [routerLink]="['/skills']" [routerLinkActive]="['active']">
         <i class="fa fa-wrench"></i>
-        <span>skills</span>
+        <span>{{'leftPanel.skills' | translate}}</span>
       </div>
       <div class="menu-navigation-item" [routerLink]="['/experience']" [routerLinkActive]="['active']">
         <i class="fa fa-briefcase"></i>
-        <span>experience</span>
+        <span>{{'leftPanel.experience' | translate}}</span>
       </div>
       <div class="menu-navigation-item" [routerLink]="['/education']" [routerLinkActive]="['active']">
         <i class="fa fa-university"></i>
-        <span>education</span>
+        <span>{{'leftPanel.education' | translate}}</span>
       </div>
-      <div class="menu-navigation-item" [routerLink]="['/contact']" [routerLinkActive]="['active']">
+      <div class="menu-navigation-item" [routerLink]="['/contacts']" [routerLinkActive]="['active']">
         <i class="fa fa-phone"></i>
-        <span>contact</span>
+        <span>{{'leftPanel.contacts' | translate}}</span>
       </div>
     </div>
     <!--End main navigation-->

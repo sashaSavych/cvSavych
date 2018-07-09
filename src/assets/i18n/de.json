@@ -1,3 +1,10 @@
 {
-  "test": "Das ist Deutsch"
+  "leftPanel": {
+    "name": "Oleksandr Savych",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "experience": "Erfahrung",
+    "education": "Bildung",
+    "contacts": "Kontakte"
+  }
 }

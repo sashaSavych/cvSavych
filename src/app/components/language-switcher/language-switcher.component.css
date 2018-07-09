@@ -1,0 +1,8 @@
+.active {
+  color: white;
+  background-color: #1d1c25;
+}
+button:hover {
+  background-color: #efefef;
+  cursor: pointer;
+}

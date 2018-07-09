@@ -1,3 +1,5 @@
+$menu_item_height: 35px;
+
 figure {
   img {
     max-width: 100%;
@@ -11,7 +13,7 @@ figure {
   justify-content: center;
   background-color: #33373d;
   color: #ffff;
-  height: 50px;
+  height: $menu_item_height;
   text-transform: uppercase;
   border-bottom: 1px solid #26292e;
 }
@@ -21,7 +23,7 @@ figure {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: $menu_item_height;
     padding: 0 15% 0 15%;
     text-decoration: none;
     text-transform: uppercase;
@@ -50,7 +52,7 @@ figure {
 .footer {
   > .social {
     background-color: #33373d;
-    height: 50px;
+    height: $menu_item_height;
     display: flex;
     > div {
       width: 100%;
