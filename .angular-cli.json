@@ -27,9 +27,7 @@
         "styles/styles.scss",
         "../node_modules/auth0-js/build/auth0.js"
       ],
-      "scripts": [
-        "assets/bundles/googleMap.js"
-      ],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

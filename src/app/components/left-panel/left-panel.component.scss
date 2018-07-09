@@ -3,60 +3,69 @@ figure {
     max-width: 100%;
     display: block;
   }
-  figcaption {
-    position: absolute;
-    top: 12%;
-    left: -3%;
-    color: white;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    background: -moz-linear-gradient(left, rgba(51,55,61,1) 0%, rgba(51,55,61,0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,55,61,1)), color-stop(100%,rgba(51,55,61,0)));
-    background: -webkit-linear-gradient(left, rgba(51,55,61,1) 0%,rgba(51,55,61,0) 100%);
-    background: -o-linear-gradient(left, rgba(51,55,61,1) 0%,rgba(51,55,61,0) 100%);
-    background: -ms-linear-gradient(left, rgba(51,55,61,1) 0%,rgba(51,55,61,0) 100%);
-    background: linear-gradient(to left, rgba(51,55,61,1) 0%,rgba(51,55,61,0) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33373d', endColorstr='#0033373d',GradientType=0 );
-  }
+}
+
+.my-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #33373d;
+  color: #ffff;
+  height: 50px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #26292e;
 }
 
 .main-navigation-menu {
-  > div {
+  div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
+    padding: 0 15% 0 15%;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      @extend .active;
+      cursor: pointer;
+    }
+  }
+  .menu-navigation-item.active {
+    @extend .active;
+  }
+  .menu-navigation-item {
     background-color: #33373d;
     color: #ffff;
-    height: 50px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #26292e;
-    padding: 0 15% 0 15%;
-    &:hover {
-      background-color: #065e52;
-      cursor: pointer;
-      font-weight: 600;
-    }
+    border-top: 2px solid #26292e;
+    border-bottom: 2px solid #26292e;
   }
 }
 
+.active {
+  background-color: #065e52;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
 .footer {
-  background-color: #ffffff;
   > .social {
-    display: flex;
-    justify-content: space-around;
+    background-color: #33373d;
     height: 50px;
-    align-items: center;
+    display: flex;
     > div {
-      // background-color: green;
-      > a {
-        text-align: center;
-        text-decoration: none;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #33373d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffff;
+      font-size: x-large;
+      text-decoration: none;
+      &:hover {
+        @extend .active;
+        cursor: pointer;
       }
     }
-  }
-  > p {
-    text-align: right;
-    padding-right: 5px;
   }
 }

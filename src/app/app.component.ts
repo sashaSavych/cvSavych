@@ -36,6 +36,6 @@ export class AppComponent implements OnInit {
   }
 
   initOverlays() {
-    this.overlays = [new google.maps.Marker({position: {lat: 50.4501, lng: 30.5234}, title: 'Hometown'})];
+    // this.overlays = [new google.maps.Marker({position: {lat: 50.4501, lng: 30.5234}, title: 'Hometown'})];
   }
 }

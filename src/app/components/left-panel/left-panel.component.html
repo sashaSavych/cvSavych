@@ -1,20 +1,30 @@
 <div>
   <div class="content">
+    <div class="my-name">Oleksandr Savych</div>
     <!--Profile image-->
     <figure>
       <img src="../../../assets/img/profile.jpg" alt=""/>
-      <figcaption>
-        <span>Oleksandr Savych<sup>&reg;</sup></span>
-      </figcaption>
     </figure>
     <!--End profile image-->
     <!--Main navigation-->
     <div class="main-navigation-menu">
-      <div>
+      <div class="menu-navigation-item" [routerLink]="['/about']" [routerLinkActive]="['active']">
         <i class="fa fa-user"></i>
         <span>about</span>
       </div>
-      <div>
+      <div class="menu-navigation-item" [routerLink]="['/skills']" [routerLinkActive]="['active']">
+        <i class="fa fa-wrench"></i>
+        <span>skills</span>
+      </div>
+      <div class="menu-navigation-item" [routerLink]="['/experience']" [routerLinkActive]="['active']">
+        <i class="fa fa-briefcase"></i>
+        <span>experience</span>
+      </div>
+      <div class="menu-navigation-item" [routerLink]="['/education']" [routerLinkActive]="['active']">
+        <i class="fa fa-university"></i>
+        <span>education</span>
+      </div>
+      <div class="menu-navigation-item" [routerLink]="['/contact']" [routerLinkActive]="['active']">
         <i class="fa fa-phone"></i>
         <span>contact</span>
       </div>
@@ -24,11 +34,10 @@
   <!--Footer-->
   <div class="footer">
     <div class="social">
-      <div><a href="#"><i class="fa fa-linkedin"></i></a></div>
-      <div><a href="#"><i class="fa fa-facebook"></i></a></div>
-      <div><a href="#"><i class="fa fa-instagram"></i></a></div>
+      <div (click)="openSocial('linkedin')"><i class="fa fa-linkedin"></i></div>
+      <div (click)="openSocial('facebook')"><i class="fa fa-facebook"></i></div>
+      <div (click)="openSocial('instagram')"><i class="fa fa-instagram"></i></div>
     </div>
-    <p>&copy; 2018</p>
   </div>
   <!--End footer-->
 </div>
