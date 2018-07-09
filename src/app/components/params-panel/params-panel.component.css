@@ -1,4 +1,6 @@
 .main-container {
   display: flex;
   justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 1px solid #efefef;
 }

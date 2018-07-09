@@ -30,6 +30,8 @@ import { EducationComponent } from './components/right-panel/education/education
 import { ContactsComponent } from './components/right-panel/contacts/contacts.component';
 import { SocialComponent } from './components/right-panel/social/social.component';
 import { ParamsPanelComponent } from './components/params-panel/params-panel.component';
+import { InfoRowComponent } from './components/right-panel/info-row/info-row.component';
+import { FooterComponent } from './components/right-panel/footer/footer.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -48,7 +50,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     EducationComponent,
     ContactsComponent,
     SocialComponent,
-    ParamsPanelComponent
+    ParamsPanelComponent,
+    InfoRowComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,
