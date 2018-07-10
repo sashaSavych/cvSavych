@@ -3,10 +3,15 @@ h1 {
 }
 .main-container {
   background-color: #ffffff;
-  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
   display: inline-block;
+  div {
+    padding: 2px;
+  }
   cv-info-row {
-    padding-right: 3px;
+    font-size: smaller;
+    padding: 2px;
   }
 }
 .about-me {

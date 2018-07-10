@@ -6,5 +6,35 @@
     "experience": "Experience",
     "education": "Education",
     "contacts": "Contacts"
+  },
+  "rightPanel": {
+    "about": {
+      "contacts": {
+        "name": {
+          "label": "Name",
+          "value": "Oleksandr Savych"
+        },
+        "dateOfBirth": {
+          "label": "Date of birth",
+          "value": "March 22, 1992"
+        },
+        "address": {
+          "label": "Address",
+          "value": "Kyiv, Ukraine"
+        },
+        "email": {
+          "label": "Email",
+          "value": "oleksandr.i.savych@gmail.com"
+        },
+        "phone": {
+          "label": "Phone",
+          "value": "+38 (063) 584 77 00"
+        },
+        "skype": {
+          "label": "Skype",
+          "value": "sasha_savych"
+        }
+      }
+    }
   }
 }

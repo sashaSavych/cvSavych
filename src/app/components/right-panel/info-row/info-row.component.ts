@@ -1,9 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-
-interface IInfoRow {
-  label: string;
-  value: string;
-}
+import {Component, Input} from '@angular/core';
+import {SelectItem} from 'primeng/api';
 
 @Component({
   selector: 'cv-info-row',
@@ -11,7 +7,7 @@ interface IInfoRow {
   styleUrls: ['./info-row.component.scss']
 })
 export class InfoRowComponent {
-  @Input() data: IInfoRow;
+  @Input() data: SelectItem;
 
   constructor() { }
 }
