@@ -35,6 +35,7 @@ import { ParamsPanelComponent } from './components/params-panel/params-panel.com
 import { InfoRowComponent } from './components/right-panel/info-row/info-row.component';
 import { FooterComponent } from './components/right-panel/footer/footer.component';
 import { DynamicProgressComponent } from './components/right-panel/dynamic-progress/dynamic-progress.component';
+import { TimelineItemComponent } from './components/right-panel/timeline-item/timeline-item.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -56,7 +57,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ParamsPanelComponent,
     InfoRowComponent,
     FooterComponent,
-    DynamicProgressComponent
+    DynamicProgressComponent,
+    TimelineItemComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,
