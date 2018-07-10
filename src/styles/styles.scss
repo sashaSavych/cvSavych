@@ -12,3 +12,20 @@
 body {
   background-color: #efefef;
 }
+
+button {
+  color: #ffffff;
+  border-top: 2px solid #26292e;
+  border-bottom: 2px solid #26292e;
+  background-color: #33373d;
+  &:hover {
+    cursor: pointer;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: #065e52;
+  }
+  &:focus {
+    background-color: #065e52;
+    outline-width: 0;
+  }
+}

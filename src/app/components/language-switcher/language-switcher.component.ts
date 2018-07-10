@@ -8,12 +8,12 @@ import {TranslateService} from '@ngx-translate/core';
 @Component({
   selector: 'cv-language-switcher',
   templateUrl: './language-switcher.component.html',
-  styleUrls: ['./language-switcher.component.css']
+  styleUrls: ['./language-switcher.component.scss']
 })
 export class CounterComponent implements OnInit {
 
   constructor(@Inject(AppStore) private store: Store<AppState>,
-              private translateService: TranslateService) {
+              public translateService: TranslateService) {
     store.subscribe(() => this.readState());
     this.readState();
   }
