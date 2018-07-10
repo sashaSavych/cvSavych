@@ -25,6 +25,7 @@
         "styles/reset.css",
         "styles/normalize.css",
         "styles/styles.scss",
+        "styles/primeng-override.scss",
         "../node_modules/auth0-js/build/auth0.js"
       ],
       "scripts": [],
@@ -60,7 +61,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "component": {}
   }
 }

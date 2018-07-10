@@ -16,6 +16,8 @@ import {ROUTES} from './app.routing';
 import {ToggleButtonModule} from 'primeng/togglebutton';
 import {SliderModule} from 'primeng/slider';
 import {GMapModule} from 'primeng/gmap';
+import {PanelModule} from 'primeng/panel';
+import {ProgressBarModule} from 'primeng/progressbar';
 
 // custom
 import { AppComponent } from './app.component';
@@ -32,6 +34,7 @@ import { SocialComponent } from './components/right-panel/social/social.componen
 import { ParamsPanelComponent } from './components/params-panel/params-panel.component';
 import { InfoRowComponent } from './components/right-panel/info-row/info-row.component';
 import { FooterComponent } from './components/right-panel/footer/footer.component';
+import { DynamicProgressComponent } from './components/right-panel/dynamic-progress/dynamic-progress.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -52,7 +55,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SocialComponent,
     ParamsPanelComponent,
     InfoRowComponent,
-    FooterComponent
+    FooterComponent,
+    DynamicProgressComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,
@@ -65,7 +69,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     }),
     // primeng
-    ToggleButtonModule, SliderModule, GMapModule
+    ToggleButtonModule, SliderModule, GMapModule, PanelModule, ProgressBarModule
   ],
   providers: [AuthService, AppStoreProviders],
   bootstrap: [AppComponent]
