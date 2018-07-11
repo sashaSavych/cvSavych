@@ -19,6 +19,7 @@ import {GMapModule} from 'primeng/gmap';
 import {PanelModule} from 'primeng/panel';
 import {ProgressBarModule} from 'primeng/progressbar';
 import {CarouselModule} from 'primeng/carousel';
+import {ScrollPanelModule} from 'primeng/scrollpanel';
 
 // custom
 import { AboutComponent } from './components/right-panel/about/about.component';
@@ -88,7 +89,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     GMapModule,
     PanelModule,
     ProgressBarModule,
-    CarouselModule
+    CarouselModule,
+    ScrollPanelModule
   ],
   providers: [AuthService, AppStoreProviders],
   bootstrap: [AppComponent]

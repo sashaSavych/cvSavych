@@ -4,9 +4,15 @@
       <cv-left-panel></cv-left-panel>
     </div>
     <div class="ui-g-12 ui-md-7 ui-lg-9">
-      <cv-params-panel></cv-params-panel>
-      <router-outlet></router-outlet>
-      <cv-footer></cv-footer>
+      <div>
+        <cv-params-panel></cv-params-panel>
+      </div>
+      <p-scrollPanel class="right-panel-container">
+        <router-outlet></router-outlet>
+      </p-scrollPanel>
+      <div>
+        <cv-footer></cv-footer>
+      </div>
     </div>
   </div>
 </div>

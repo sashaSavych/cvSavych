@@ -13,6 +13,25 @@ export class AboutComponent implements OnInit {
 
   advisers: any[];
 
+  interests: {iconName: string; label: string}[] = [
+    {
+      iconName: 'suitcase',
+      label: 'Traveling'
+    },
+    {
+      iconName: 'gamepad',
+      label: 'Technologies'
+    },
+    {
+      iconName: 'puzzle-piece',
+      label: 'Boardgames'
+    },
+    {
+      iconName: 'futbol-o',
+      label: 'Sport'
+    }
+  ];
+
   constructor() {
     this.advisers = Array(3);
   }
