@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit {
   advisers: any[];
 
   constructor() {
-    this.advisers = Array(5);
+    this.advisers = Array(3);
   }
 
   ngOnInit() {

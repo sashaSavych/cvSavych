@@ -7,7 +7,7 @@ h1 {
   padding-left: 10px;
   display: block;
   div {
-    padding: 2px;
+    // padding: 2px;
   }
   cv-info-row {
     font-size: smaller;
@@ -25,5 +25,19 @@ h1 {
 
 .additional-panel {
   margin: 15px 0 15px 0;
-  display: inline-block;
+  display: block;
+}
+
+.interests {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+}
+
+.interest {
+  width: 110px;
+  height: 110px;
+  margin-right: 10px;
+  border: 2px solid #065e52;
 }
