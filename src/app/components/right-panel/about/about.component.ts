@@ -11,7 +11,11 @@ export class AboutComponent implements OnInit {
     rightBlock: string[];
   };
 
-  constructor() { }
+  advisers: any[];
+
+  constructor() {
+    this.advisers = Array(5);
+  }
 
   ngOnInit() {
     this.contactDataLocalizationKeys = {

@@ -18,6 +18,7 @@ import {SliderModule} from 'primeng/slider';
 import {GMapModule} from 'primeng/gmap';
 import {PanelModule} from 'primeng/panel';
 import {ProgressBarModule} from 'primeng/progressbar';
+import {CarouselModule} from 'primeng/carousel';
 
 // custom
 import { AboutComponent } from './components/right-panel/about/about.component';
@@ -41,6 +42,7 @@ import { BlockTitleComponent } from './components/block-title/block-title.compon
 import { PeriodItemComponent } from './components/period-item/period-item.component';
 import { PeriodDividerComponent } from './components/period-divider/period-divider.component';
 import { EducationItemComponent } from './components/education-item/education-item.component';
+import { TestimonialItemComponent } from './components/testimonial-item/testimonial-item.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -67,7 +69,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BlockTitleComponent,
     PeriodItemComponent,
     PeriodDividerComponent,
-    EducationItemComponent
+    EducationItemComponent,
+    TestimonialItemComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,
@@ -80,7 +83,12 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     }),
     // primeng
-    ToggleButtonModule, SliderModule, GMapModule, PanelModule, ProgressBarModule
+    ToggleButtonModule,
+    SliderModule,
+    GMapModule,
+    PanelModule,
+    ProgressBarModule,
+    CarouselModule
   ],
   providers: [AuthService, AppStoreProviders],
   bootstrap: [AppComponent]

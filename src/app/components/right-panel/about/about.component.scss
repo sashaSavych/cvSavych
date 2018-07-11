@@ -5,7 +5,7 @@ h1 {
   background-color: #ffffff;
   padding-right: 10px;
   padding-left: 10px;
-  display: inline-block;
+  display: block;
   div {
     padding: 2px;
   }
@@ -17,4 +17,13 @@ h1 {
 .about-me {
   margin-top: 15px;
   color: #a0a8b4;
+}
+
+.contacts-info {
+  display: flow-root;
+}
+
+.additional-panel {
+  margin: 15px 0 15px 0;
+  display: inline-block;
 }

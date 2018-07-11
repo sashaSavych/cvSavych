@@ -17,7 +17,7 @@
   </div>
   <!--End about me-->
   <!--Contacts-->
-  <div>
+  <div class="contacts-info">
     <div class="ui-g-12 ui-md-12 ui-lg-6">
       <cv-info-row *ngFor="let contact of contactDataLocalizationKeys.leftBlock"
                    [data]="{label: 'rightPanel.about.contacts.'+contact+'.label',
@@ -30,4 +30,20 @@
     </div>
   </div>
   <!--End contacts-->
+  <p-carousel headerText="Testimonials" [value]="advisers"
+              [circular]="'circular'" [numVisible]="1" [pageLinks]="advisers.length">
+    <ng-template let-car pTemplate="item">
+      <cv-testimonial-item></cv-testimonial-item>
+    </ng-template>
+  </p-carousel>
+
+  <p-panel class="additional-panel" header="Interests">
+    <p>
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+      dicta sunt explicabo. Nemo enim ipsam voluptatem. Sed ut perspiciatis unde omnis iste natus error
+      sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.
+    </p>
+  </p-panel>
 </div>
