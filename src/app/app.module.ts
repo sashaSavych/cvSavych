@@ -25,13 +25,15 @@ import { LeftPanelComponent } from './components/left-panel/left-panel.component
 import { LoginComponent } from './components/login/login.component';
 import { CounterComponent } from './components/language-switcher/language-switcher.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ParamsPanelComponent } from './components/params-panel/params-panel.component';
+import { BlockTitleComponent } from './components/block-title/block-title.component';
+
 import { AboutComponent } from './components/right-panel/about/about.component';
 import { SkillsComponent } from './components/right-panel/skills/skills.component';
 import { ExperienceComponent } from './components/right-panel/experience/experience.component';
 import { EducationComponent } from './components/right-panel/education/education.component';
 import { ContactsComponent } from './components/right-panel/contacts/contacts.component';
 import { SocialComponent } from './components/right-panel/social/social.component';
-import { ParamsPanelComponent } from './components/params-panel/params-panel.component';
 import { InfoRowComponent } from './components/right-panel/info-row/info-row.component';
 import { FooterComponent } from './components/right-panel/footer/footer.component';
 import { DynamicProgressComponent } from './components/right-panel/dynamic-progress/dynamic-progress.component';
@@ -58,7 +60,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     InfoRowComponent,
     FooterComponent,
     DynamicProgressComponent,
-    TimelineItemComponent
+    TimelineItemComponent,
+    BlockTitleComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,

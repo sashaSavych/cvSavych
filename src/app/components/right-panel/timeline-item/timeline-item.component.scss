@@ -5,21 +5,33 @@
   display: flex;
 }
 
+.date-info {
+  display: flex;
+  margin-top: 5px;
+  span {
+    text-align: center;
+    font-size: 0.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
 .vertical-text {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 0 0;
 }
 
 .top-panel {
   display: flex;
   justify-content: space-between;
 }
-span {
-  margin-top: 10px;
+.vertical-line {
   display: inline-block;
-  font-size: smaller;
+  background: linear-gradient(#ffffff, #33373d, #065e52, #ffffff);
+  width: 10px;
+  height: 100%;
+  margin-top: 3px;
 }
-p {
-  color: #a0a8b4;
-  font-size: smaller;
-}
+
