@@ -1,0 +1,26 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+span {
+  display: inline-block;
+  width: 10px;
+}
+.vertical-line-first {
+  height: 15%;
+  background: linear-gradient(#ffffff, #33373d, #ffffff);
+}
+.vertical-line-second {
+  height: 85%;
+  background: linear-gradient(#ffffff, #33373d, #065e52, #ffffff);
+}
+/*
+.vertical-line {
+  display: inline-block;
+  background: linear-gradient(#ffffff, #33373d, #065e52, #ffffff);
+  width: 10px;
+  height: 100%;
+  margin-top: 3px;
+}
+*/

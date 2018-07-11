@@ -20,14 +20,6 @@ import {PanelModule} from 'primeng/panel';
 import {ProgressBarModule} from 'primeng/progressbar';
 
 // custom
-import { AppComponent } from './app.component';
-import { LeftPanelComponent } from './components/left-panel/left-panel.component';
-import { LoginComponent } from './components/login/login.component';
-import { CounterComponent } from './components/language-switcher/language-switcher.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
-import { ParamsPanelComponent } from './components/params-panel/params-panel.component';
-import { BlockTitleComponent } from './components/block-title/block-title.component';
-
 import { AboutComponent } from './components/right-panel/about/about.component';
 import { SkillsComponent } from './components/right-panel/skills/skills.component';
 import { ExperienceComponent } from './components/right-panel/experience/experience.component';
@@ -37,7 +29,18 @@ import { SocialComponent } from './components/right-panel/social/social.componen
 import { InfoRowComponent } from './components/right-panel/info-row/info-row.component';
 import { FooterComponent } from './components/right-panel/footer/footer.component';
 import { DynamicProgressComponent } from './components/right-panel/dynamic-progress/dynamic-progress.component';
-import { TimelineItemComponent } from './components/right-panel/timeline-item/timeline-item.component';
+import { ExperienceItemComponent } from './components/right-panel/experience-item/experience-item.component';
+
+import { AppComponent } from './app.component';
+import { LeftPanelComponent } from './components/left-panel/left-panel.component';
+import { LoginComponent } from './components/login/login.component';
+import { CounterComponent } from './components/language-switcher/language-switcher.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { ParamsPanelComponent } from './components/params-panel/params-panel.component';
+import { BlockTitleComponent } from './components/block-title/block-title.component';
+import { PeriodItemComponent } from './components/period-item/period-item.component';
+import { PeriodDividerComponent } from './components/period-divider/period-divider.component';
+import { EducationItemComponent } from './components/education-item/education-item.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -60,8 +63,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     InfoRowComponent,
     FooterComponent,
     DynamicProgressComponent,
-    TimelineItemComponent,
-    BlockTitleComponent
+    ExperienceItemComponent,
+    BlockTitleComponent,
+    PeriodItemComponent,
+    PeriodDividerComponent,
+    EducationItemComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,

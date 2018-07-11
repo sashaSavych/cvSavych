@@ -30,6 +30,16 @@ button {
   }
 }
 
+cv-period-divider {
+  display: flex;
+  height: 100%;
+}
+
+.block-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
 .block-text {
   color: #a0a8b4;
   font-size: 0.7em;
@@ -38,5 +48,9 @@ button {
 
 .uppercase-name {
   text-transform: uppercase;
-  font-size: 0.75em;
+  font-size: 0.65em;
+}
+
+.no-padding-block {
+  padding: 0;
 }

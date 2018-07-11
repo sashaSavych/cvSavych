@@ -1,18 +1,12 @@
 <div class="main-container">
   <div class="ui-g-3 ui-md-3 ui-lg-2">
-    <cv-block-title [title]="'Period'" [iconName]="'calendar'"></cv-block-title>
-    <div class="date-info">
-      <span>Sept 2015</span>
-      <span>&nbsp;-&nbsp;</span>
-      <span>Nov 2015</span>
-    </div>
+    <cv-period-item [from]="'Sep 2014'" [to]="'Aug 2018'"></cv-period-item>
   </div>
-  <div class="vertical-text ui-g-1 ui-md-1 ui-lg-1">
-    <i class="fa fa-dot-circle-o"></i>
-    <span class="vertical-line"></span>
+  <div class="no-padding-block ui-g-1 ui-md-1 ui-lg-1">
+    <cv-period-divider></cv-period-divider>
   </div>
   <div class="ui-g-8 ui-md-8 ui-lg-9">
-    <div class="top-panel">
+    <div class="block-panel">
       <div>
         <cv-block-title [title]="'Position'" [iconName]="'briefcase'"></cv-block-title>
         <p class="uppercase-name">Web developer</p>
