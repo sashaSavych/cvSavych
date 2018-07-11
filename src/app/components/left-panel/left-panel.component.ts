@@ -13,6 +13,10 @@ export class LeftPanelComponent implements OnInit {
   ngOnInit() {
   }
 
+  downloadPDF(): void {
+    console.log('downloadPDF');
+  }
+
   openSocial(socialName: string): void {
     window.open(GLOBALS.social[socialName], '_blank');
   }

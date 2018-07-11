@@ -24,9 +24,13 @@
         <i class="fa fa-university"></i>
         <span>{{'leftPanel.education' | translate}}</span>
       </div>
-      <div class="menu-navigation-item" [routerLink]="['/contacts']" [routerLinkActive]="['active']">
+<!--      <div class="menu-navigation-item" [routerLink]="['/contacts']" [routerLinkActive]="['active']">
         <i class="fa fa-phone"></i>
         <span>{{'leftPanel.contacts' | translate}}</span>
+      </div>-->
+      <div class="menu-navigation-item" (click)="downloadPDF()">
+        <i class="fa fa-download"></i>
+        <span>{{'Download CV' | translate}}</span>
       </div>
     </div>
     <!--End main navigation-->
