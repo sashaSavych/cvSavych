@@ -44,6 +44,7 @@ import { PeriodItemComponent } from './components/period-item/period-item.compon
 import { PeriodDividerComponent } from './components/period-divider/period-divider.component';
 import { EducationItemComponent } from './components/education-item/education-item.component';
 import { TestimonialItemComponent } from './components/testimonial-item/testimonial-item.component';
+import { CircleProgressBarComponent } from './components/right-panel/circle-progress-bar/circle-progress-bar.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -71,7 +72,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PeriodItemComponent,
     PeriodDividerComponent,
     EducationItemComponent,
-    TestimonialItemComponent
+    TestimonialItemComponent,
+    CircleProgressBarComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,

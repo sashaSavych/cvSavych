@@ -1,0 +1,33 @@
+.bar-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-bar{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  canvas, p {
+    position: absolute;
+  }
+}
+
+p {
+  font-weight: 700;
+  color: #33373d;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 20px;
+}
+
+.label {
+  font-size: 15px;
+  margin-top: 10px;
+  text-align: center;
+}

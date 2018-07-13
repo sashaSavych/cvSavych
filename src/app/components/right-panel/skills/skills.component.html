@@ -1,6 +1,6 @@
 <div class="main-container">
   <p-panel header="Design">
-    <cv-dynamic-progress [maxValue]="64" [label]="'Photoshop'"></cv-dynamic-progress>
+    <cv-dynamic-progress [maxValue]="59" [label]="'Photoshop'"></cv-dynamic-progress>
   </p-panel>
   <p-panel header="Coding">
     <cv-dynamic-progress [maxValue]="15" [label]="'Javascript'"></cv-dynamic-progress>
@@ -16,9 +16,14 @@
     <cv-dynamic-progress [maxValue]="67" [label]="'HTML'"></cv-dynamic-progress>
   </p-panel>
   <p-panel header="Languages">
-    <cv-dynamic-progress [maxValue]="97" [label]="'Ukrainian'"></cv-dynamic-progress>
-    <cv-dynamic-progress [maxValue]="90" [label]="'Russian'"></cv-dynamic-progress>
-    <cv-dynamic-progress [maxValue]="75" [label]="'English'"></cv-dynamic-progress>
-    <cv-dynamic-progress [maxValue]="30" [label]="'German'"></cv-dynamic-progress>
+    <div class="bar-list">
+      <cv-circle-progress-bar [barValue]="97" [label]="'Ukrainian'"></cv-circle-progress-bar>
+      <cv-circle-progress-bar [barValue]="90" [label]="'Russian'"></cv-circle-progress-bar>
+      <cv-circle-progress-bar [barValue]="75" [label]="'English'"></cv-circle-progress-bar>
+      <cv-circle-progress-bar [barValue]="25" [label]="'German'"></cv-circle-progress-bar>
+    </div>
+  </p-panel>
+  <p-panel header="Plans">
+    Roadmap
   </p-panel>
 </div>

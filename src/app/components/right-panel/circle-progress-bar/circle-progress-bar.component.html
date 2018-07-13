@@ -1,0 +1,8 @@
+<div class="bar-component">
+  <div #progressBar class="progress-bar">
+    <canvas #inactiveProgress></canvas>
+    <canvas #activeProgress></canvas>
+    <p *ngIf="showValue" class="value">{{initValue}}%</p>
+  </div>
+  <p *ngIf="label" class="label">{{label}}</p>
+</div>
