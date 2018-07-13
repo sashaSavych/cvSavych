@@ -43,11 +43,19 @@
     </div>
   </p-panel>
   <p-panel header="Languages">
-    <div class="bar-list">
-      <cv-circle-progress-bar [barValue]="97" [label]="'Ukrainian'"></cv-circle-progress-bar>
-      <cv-circle-progress-bar [barValue]="90" [label]="'Russian'"></cv-circle-progress-bar>
-      <cv-circle-progress-bar [barValue]="75" [label]="'English'"></cv-circle-progress-bar>
-      <cv-circle-progress-bar [barValue]="25" [label]="'German'"></cv-circle-progress-bar>
+    <div class="bar-list ui-g">
+      <div class="ui-g-6 ui-md-6 ui-lg-3">
+        <cv-circle-progress-bar [barValue]="97" [label]="'Ukrainian'"></cv-circle-progress-bar>
+      </div>
+      <div class="ui-g-6 ui-md-6 ui-lg-3">
+        <cv-circle-progress-bar [barValue]="90" [label]="'Russian'"></cv-circle-progress-bar>
+      </div>
+      <div class="ui-g-6 ui-md-6 ui-lg-3">
+        <cv-circle-progress-bar [barValue]="75" [label]="'English'"></cv-circle-progress-bar>
+      </div>
+      <div class="ui-g-6 ui-md-6 ui-lg-3">
+        <cv-circle-progress-bar [barValue]="20" [label]="'German'"></cv-circle-progress-bar>
+      </div>
     </div>
   </p-panel>
   <p-panel header="Plans">
