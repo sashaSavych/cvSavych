@@ -1,19 +1,46 @@
 <div class="main-container">
   <p-panel header="Design">
-    <cv-dynamic-progress [maxValue]="59" [label]="'Photoshop'"></cv-dynamic-progress>
+    <div class="ui-g">
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-dynamic-progress [maxValue]="59" [label]="'Photoshop'"></cv-dynamic-progress>
+      </div>
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-dynamic-progress [maxValue]="20" [label]="'Adobe'"></cv-dynamic-progress>
+      </div>
+    </div>
   </p-panel>
   <p-panel header="Coding">
-    <cv-dynamic-progress [maxValue]="15" [label]="'Javascript'"></cv-dynamic-progress>
-    <cv-dynamic-progress [maxValue]="80" [label]="'HTML'"></cv-dynamic-progress>
-    <cv-dynamic-progress [maxValue]="34" [label]="'CSS3'"></cv-dynamic-progress>
+    <div class="ui-g">
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-dynamic-progress [maxValue]="15" [label]="'Javascript'"></cv-dynamic-progress>
+      </div>
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-dynamic-progress [maxValue]="80" [label]="'HTML'"></cv-dynamic-progress>
+      </div>
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-dynamic-progress [maxValue]="34" [label]="'CSS3'"></cv-dynamic-progress>
+      </div>
+    </div>
   </p-panel>
   <p-panel header="Project management">
-    <cv-dynamic-progress [maxValue]="44" [label]="'Scrum'"></cv-dynamic-progress>
+    <div class="ui-g">
+      <div *ngFor="let a of ['Scrum', 'Kanban', 'Agile']" class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-dynamic-progress [maxValue]="44" [label]="a"></cv-dynamic-progress>
+      </div>
+    </div>
   </p-panel>
   <p-panel header="Assets">
-    <cv-dynamic-progress [maxValue]="59" [label]="'Creative'"></cv-dynamic-progress>
-    <cv-dynamic-progress [maxValue]="33" [label]="'HTML'"></cv-dynamic-progress>
-    <cv-dynamic-progress [maxValue]="67" [label]="'HTML'"></cv-dynamic-progress>
+    <div class="ui-g">
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-dynamic-progress [maxValue]="59" [label]="'Creative'"></cv-dynamic-progress>
+      </div>
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-dynamic-progress [maxValue]="33" [label]="'HTML'"></cv-dynamic-progress>
+      </div>
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-dynamic-progress [maxValue]="67" [label]="'HTML'"></cv-dynamic-progress>
+      </div>
+    </div>
   </p-panel>
   <p-panel header="Languages">
     <div class="bar-list">

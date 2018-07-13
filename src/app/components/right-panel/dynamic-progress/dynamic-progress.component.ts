@@ -6,10 +6,8 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./dynamic-progress.component.scss']
 })
 export class DynamicProgressComponent implements OnInit {
-  @Input()
-  label = '';
-  @Input()
-  maxValue = 0;
+  @Input() label = '';
+  @Input() maxValue = 0;
   value = 0;
 
   constructor() { }

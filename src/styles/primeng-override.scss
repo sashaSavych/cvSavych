@@ -1,6 +1,19 @@
-.ui-progressbar-value {
-  background-color: #065e52 !important;
+.ui-progressbar {
+  height: 15px;
 }
+
+.ui-progressbar.ui-progressbar-determinate .ui-progressbar-value {
+  background-color: #065e52;
+}
+.ui-progressbar.ui-widget-content {
+  background-color: #eff1f3;
+}
+
 .ui-scrollpanel-content {
-  height: calc(100vh - 70px) !important;
+  height: calc(100vh - 70px);
+}
+
+.ui-panel-title {
+  text-transform: uppercase;
+  font-weight: 600;
 }
