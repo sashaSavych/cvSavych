@@ -6,13 +6,6 @@ h1 {
   padding-right: 10px;
   padding-left: 10px;
   display: flow-root;
-  div {
-    // padding: 2px;
-  }
-  cv-info-row {
-    font-size: smaller;
-    padding: 2px;
-  }
 }
 .about-me {
   margin-top: 15px;
@@ -21,6 +14,10 @@ h1 {
 
 .contacts-info {
   display: flow-root;
+  margin: 10px 0 10px 0;
+  div {
+    padding: 0;
+  }
 }
 
 .additional-panel {
