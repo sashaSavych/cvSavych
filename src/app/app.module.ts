@@ -46,6 +46,7 @@ import { EducationItemComponent } from './components/education-item/education-it
 import { TestimonialItemComponent } from './components/testimonial-item/testimonial-item.component';
 import { CircleProgressBarComponent } from './components/right-panel/circle-progress-bar/circle-progress-bar.component';
 import { ContactItemComponent } from './components/right-panel/contact-item/contact-item.component';
+import { CheckItemComponent } from './components/right-panel/check-item/check-item.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -75,7 +76,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     EducationItemComponent,
     TestimonialItemComponent,
     CircleProgressBarComponent,
-    ContactItemComponent
+    ContactItemComponent,
+    CheckItemComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,
