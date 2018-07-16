@@ -25,7 +25,6 @@ import { AboutComponent } from './components/right-panel/about/about.component';
 import { SkillsComponent } from './components/right-panel/skills/skills.component';
 import { ExperienceComponent } from './components/right-panel/experience/experience.component';
 import { EducationComponent } from './components/right-panel/education/education.component';
-import { ContactsComponent } from './components/right-panel/contacts/contacts.component';
 import { SocialComponent } from './components/right-panel/social/social.component';
 import { InfoRowComponent } from './components/right-panel/info-row/info-row.component';
 import { FooterComponent } from './components/right-panel/footer/footer.component';
@@ -62,7 +61,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     SkillsComponent,
     ExperienceComponent,
     EducationComponent,
-    ContactsComponent,
     SocialComponent,
     ParamsPanelComponent,
     InfoRowComponent,

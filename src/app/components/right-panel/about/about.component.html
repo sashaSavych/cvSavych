@@ -11,8 +11,7 @@
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
       totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
       dicta sunt explicabo. Nemo enim ipsam voluptatem. Sed ut perspiciatis unde omnis iste natus error
-      sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.
+      sit voluptatem accusantium doloremque laudantium.
     </p>
   </div>
   <!--End about me-->
@@ -24,6 +23,7 @@
       </ng-template>
     </p-carousel>
   </div>
+
   <p-panel class="additional-panel" header="Interests">
     <div class="interests">
       <div *ngFor="let interest of interests" class="interest">
@@ -32,18 +32,38 @@
       </div>
     </div>
   </p-panel>
-  <div class="additional-panel">
-    <div class="ui-g-12 ui-md-12 ui-lg-6">
-      <cv-check-item [value]="'Ready to relocate'"></cv-check-item>
+
+  <p-panel class="additional-panel" header="Contacts">
+    <div class="contacts">
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-contact-item [iconName]="'envelope'" [value]="'oleksandr.i.savych@gmail.com'" ></cv-contact-item>
+      </div>
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-contact-item [iconName]="'phone'" [value]="'+38 (063) 584 77 00'" ></cv-contact-item>
+      </div>
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-contact-item [iconName]="'map-marker'" [value]="'Kyiv, Ukraine'" ></cv-contact-item>
+      </div>
+      <div class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-contact-item [iconName]="'link'" [value]="'www.google.com'" ></cv-contact-item>
+      </div>
     </div>
-    <div class="ui-g-12 ui-md-12 ui-lg-6">
-      <cv-check-item [value]="'Fulltime / contract'"></cv-check-item>
+  </p-panel>
+
+  <p-panel class="additional-panel" header="Additional information">
+    <div class="contacts">
+      <div class="ui-g-12 ui-md-6 ui-lg-3">
+        <cv-check-item [value]="'Ready to relocate'"></cv-check-item>
+      </div>
+      <div class="ui-g-12 ui-md-6 ui-lg-3">
+        <cv-check-item [value]="'Fulltime / contract'"></cv-check-item>
+      </div>
+      <div class="ui-g-12 ui-md-6 ui-lg-3">
+        <cv-check-item [value]="'Ready for studying'"></cv-check-item>
+      </div>
+      <div class="ui-g-12 ui-md-6 ui-lg-3">
+        <cv-check-item [value]="'Permanent overtimes'" [positive]="false"></cv-check-item>
+      </div>
     </div>
-    <div class="ui-g-12 ui-md-12 ui-lg-6">
-      <cv-check-item [value]="'Ready for studying'"></cv-check-item>
-    </div>
-    <div class="ui-g-12 ui-md-12 ui-lg-6">
-      <cv-check-item [value]="'Permanent overtimes'" [positive]="false"></cv-check-item>
-    </div>
-  </div>
+  </p-panel>
 </div>
