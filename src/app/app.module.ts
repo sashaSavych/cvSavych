@@ -15,7 +15,6 @@ import {ROUTES} from './app.routing';
 // primeNG
 import {ToggleButtonModule} from 'primeng/togglebutton';
 import {SliderModule} from 'primeng/slider';
-import {GMapModule} from 'primeng/gmap';
 import {PanelModule} from 'primeng/panel';
 import {ProgressBarModule} from 'primeng/progressbar';
 import {CarouselModule} from 'primeng/carousel';
@@ -92,7 +91,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     // primeng
     ToggleButtonModule,
     SliderModule,
-    GMapModule,
     PanelModule,
     ProgressBarModule,
     CarouselModule,
