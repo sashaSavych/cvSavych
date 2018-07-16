@@ -6,11 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  contactDataLocalizationKeys: {
-    leftBlock: string[];
-    rightBlock: string[];
-  };
-
   advisers: any[];
 
   interests: {iconName: string; label: string}[] = [
@@ -36,11 +31,6 @@ export class AboutComponent implements OnInit {
     this.advisers = Array(3);
   }
 
-  ngOnInit() {
-    this.contactDataLocalizationKeys = {
-      leftBlock: ['name', 'dateOfBirth', 'address'],
-      rightBlock: ['email', 'phone', 'skype']
-    };
-  }
+  ngOnInit() {  }
 
 }
