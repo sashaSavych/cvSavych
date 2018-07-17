@@ -1,0 +1,7 @@
+@import "../../../../styles/variables";
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: $cl_container;
+}

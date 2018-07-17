@@ -1,7 +1,10 @@
 <div class="main-container">
-  <div></div>
-  <div>
-    <button>Download CV</button>
-    <button (click)="print()">Print CV</button>
-  </div>
+  <button (click)="downloadPDF()">
+    <i class="fa fa-download"></i>
+    Download PDF CV
+  </button>
+  <button (click)="openPDF()">
+    <i class="fa fa-external-link"></i>
+    Open CV in a new tab
+  </button>
 </div>

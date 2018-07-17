@@ -1,20 +1,14 @@
-<div class="main-container">
-  <!--Main title-->
+<div>
   <div class="main-title">
-    <h1>{{'leftPanel.name' | translate}}</h1>
-    <h3>{{'Front End developer' | translate}}</h3>
+    <h2 class="my-name">{{'leftPanel.name' | translate}}</h2>
+    <h3 class="my-specialization">{{'Front End developer' | translate}}</h3>
   </div>
-  <!--End main title-->
-  <!--About me-->
-  <div class="about-me">
-    <p>
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-      dicta sunt explicabo. Nemo enim ipsam voluptatem. Sed ut perspiciatis unde omnis iste natus error
-      sit voluptatem accusantium doloremque laudantium.
-    </p>
-  </div>
-  <!--End about me-->
+  <p class="block-text about-me">
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+    dicta sunt explicabo. Nemo enim ipsam voluptatem. Sed ut perspiciatis unde omnis iste natus error
+    sit voluptatem accusantium doloremque laudantium.
+  </p>
   <div class="additional-panel">
     <p-carousel headerText="Testimonials" [value]="advisers"
                 [circular]="'circular'" [numVisible]="1" [pageLinks]="advisers.length">
@@ -34,7 +28,7 @@
   </p-panel>
 
   <p-panel class="additional-panel" header="Contacts">
-    <div class="contacts">
+    <div class="items-container">
       <div class="ui-g-12 ui-md-12 ui-lg-6">
         <cv-contact-item [iconName]="'envelope'" [value]="'oleksandr.i.savych@gmail.com'" ></cv-contact-item>
       </div>
@@ -51,12 +45,12 @@
   </p-panel>
 
   <p-panel class="additional-panel" header="Additional information">
-    <div class="contacts">
+    <div class="items-container">
       <div class="ui-g-12 ui-md-6 ui-lg-3">
         <cv-check-item [value]="'Ready to relocate'"></cv-check-item>
       </div>
       <div class="ui-g-12 ui-md-6 ui-lg-3">
-        <cv-check-item [value]="'Fulltime / contract'"></cv-check-item>
+        <cv-check-item [value]="'Fulltime / remote'"></cv-check-item>
       </div>
       <div class="ui-g-12 ui-md-6 ui-lg-3">
         <cv-check-item [value]="'Ready for studying'"></cv-check-item>

@@ -7,6 +7,14 @@ body {
 // container
 .right-panel-container {
   display: flow-root;
+  background-color: $cl_container;
+  padding: 10px;
+}
+
+.additional-panel {
+  margin: 0 5px 15px 0;
+  display: block;
+  border: 0.05em solid $cl_colorful;
 }
 
 .block-panel {
@@ -65,8 +73,6 @@ button {
   @extend .button-active;
   cursor: pointer;
   transition-duration: $transition-duration;
-  font-weight: $fw_level2;
-  letter-spacing: 2px;
 }
 
 // custom components

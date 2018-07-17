@@ -1,20 +1,19 @@
-h1 {
-  margin: 0;
-}
-.main-container {
-  background-color: #ffffff;
-  padding-right: 10px;
-  padding-left: 10px;
-  display: flow-root;
-}
-.about-me {
-  margin-top: 15px;
-  color: #a0a8b4;
+@import "../../../../styles/variables";
+@import "../../../../styles/styles";
+
+.main-title {
+  text-transform: uppercase;
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    color: $cl_paragraph_text;
+  }
 }
 
-.additional-panel {
-  margin: 15px 0 15px 0;
-  display: block;
+.about-me {
+  padding: 10px 5px 10px 0;
+  font-size: $fz_large;
 }
 
 .interests {
@@ -26,18 +25,18 @@ h1 {
 .interest {
   width: 90px;
   height: 90px;
-  border: 2px solid #065e52;
+  border: 2px solid $cl_colorful;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 3px;
   i {
-    color: #065e52;
+    color: $cl_colorful;
   }
   p {
     text-transform: uppercase;
-    font-size: 0.5em;
+    font-size: $fz_medium;
     padding-top: 2px;
   }
   &:hover {
@@ -47,12 +46,12 @@ h1 {
 
 .frame-hover {
   width: 100px;
-  border: 4px solid #065e52;
+  border: 4px solid $cl_colorful;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: $fw_level2;
   transition: 0.75s;
 }
 
-.contacts {
+.items-container {
   display: flow-root;
 }

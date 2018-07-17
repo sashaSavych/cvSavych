@@ -1,17 +1,20 @@
-.main-container {
+@import "../../../../styles/variables";
+
+.contact-container {
   display: flex;
   margin-right: 20px
 }
 
 .icon-container {
-  color: #ffffff;
+  color: $cl_container;
   padding: 10px;
-  background-color: #33373d;
+  background-color: $cl_colorful;
+  transition-duration: $transition-duration;
   &:hover {
     cursor: pointer;
-    color: #33373d;
-    background-color: #ffffff;
-    transition-duration: 0.5s;
+    color: $cl_colorful;
+    background-color: $cl_container;
+    transition-duration: $transition-duration;
   }
   i {
     width: 20px;
@@ -25,10 +28,10 @@
   align-items: center;
   height: 40px;
   width: 100%;
-  font-size: 0.6em;
-  background-color: #065e52;
+  font-size: $fz_medium;
+  background-color: $cl_content;
   margin-left: 40px;
-  color: #ffffff;
+  color: $cl_colorful;
   text-transform: uppercase;
   span {
     width: 100%;
@@ -38,12 +41,12 @@
     content: '';
     margin-left: -40px;
     border: 20px solid transparent;
-    border-right-color: #065e52;
+    border-right-color: $cl_content;
   }
   &:after {
     content: '';
     margin-right: -20px;
-    border: 20px solid #065e52;
+    border: 20px solid $cl_content;
     border-right-color: transparent;
   }
 }
