@@ -1,3 +1,26 @@
 //the file is used for variables only
 
-$dark-background: #33373d;
+// colors
+$cl_container: #ffff;
+$cl_content: #ebedf0;
+$cl_dark: #33373d;
+$cl_colorful: #065e52;
+
+$cl_border_bright: #ffff;
+$cl_border_dark: #26292e;
+
+$cl_bright_text: #ffff;
+$cl_paragraph_text: #a0a8b4;
+
+// sizes
+$fz_large: 0.75em;
+$fz_medium: 0.65em;
+$fz_small: 0.5em;
+
+// font weight
+$fw_default: 500;
+$fw_level2: 600;
+$fw_level3: 700;
+
+// duration
+$transition-duration: 0.7s;

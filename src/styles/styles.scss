@@ -1,39 +1,12 @@
-:root {
-  --background-color: #1d1c25;
-  --font-size: 20px;
-  --line-height: 18px;
-}
-
-* {
-  font-family: 'open_sansbold',Arial,sans-serif;
-  font-size: var(--font-size);
-}
+@import "variables";
 
 body {
-  background-color: #efefef;
+  background-color: $cl_content;
 }
 
-button {
-  color: #ffffff;
-  border-top: 2px solid #26292e;
-  border-bottom: 2px solid #26292e;
-  background-color: #33373d;
-  &:hover {
-    cursor: pointer;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    background-color: #065e52;
-  }
-  &:focus {
-    background-color: #065e52;
-    outline-width: 0;
-  }
-}
-
-cv-period-divider {
-  display: flex;
-  height: 100%;
-  justify-content: center;
+// container
+.right-panel-container {
+  display: flow-root;
 }
 
 .block-panel {
@@ -41,25 +14,64 @@ cv-period-divider {
   justify-content: space-between;
 }
 
-.block-text {
-  color: #a0a8b4;
-  font-size: 0.7em;
-  text-align: justify;
-}
-
-.uppercase-name {
-  text-transform: uppercase;
-  font-size: 0.65em;
+.flex-center {
+  display: flex;
+  align-items: center;
 }
 
 .no-padding-block {
   padding: 0;
 }
 
-.right-panel-container {
-  display: flow-root;
+
+// title
+.uppercase-name {
+  text-transform: uppercase;
+  font-size: $fz_medium;
 }
 
-.icon-button {
-  width: 45px;
+// paragraph
+.block-text {
+  color: $cl_paragraph_text;
+  font-size: $fz_medium;
+  text-align: justify;
+}
+
+// button
+button {
+  color: $cl_container;
+  border-top: 2px solid $cl_dark;
+  border-bottom: 2px solid $cl_dark;
+  background-color: $cl_dark;
+  &:hover {
+    @extend .button-active-hover;
+  }
+  &:focus {
+    background-color: $cl_colorful;
+    outline-width: 0;
+  }
+  i {
+    width: 25px;
+  }
+}
+
+.button-active {
+  border-top: 2px solid $cl_border_bright;
+  border-bottom: 2px solid $cl_border_bright;
+  background-color: $cl_colorful;
+}
+
+.button-active-hover {
+  @extend .button-active;
+  cursor: pointer;
+  transition-duration: $transition-duration;
+  font-weight: $fw_level2;
+  letter-spacing: 2px;
+}
+
+// custom components
+cv-period-divider {
+  display: flex;
+  height: 100%;
+  justify-content: center;
 }

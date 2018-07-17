@@ -23,7 +23,7 @@
         "../node_modules/primeng/resources/themes/omega/theme.css",
         "../node_modules/primeng/resources/primeng.min.css",
         "styles/reset.css",
-        "styles/normalize.css",
+        "styles/normalize.scss",
         "styles/styles.scss",
         "styles/primeng-override.scss",
         "../node_modules/auth0-js/build/auth0.js"

@@ -1,12 +1,14 @@
+@import "variables";
+
 .ui-progressbar {
   height: 15px;
 }
 
 .ui-progressbar.ui-progressbar-determinate .ui-progressbar-value {
-  background-color: #065e52;
+  background-color: $cl_colorful;
 }
 .ui-progressbar.ui-widget-content {
-  background-color: #eff1f3;
+  background-color: $cl_container;
 }
 
 .ui-scrollpanel-content {
@@ -16,5 +18,9 @@
 .ui-panel-title,
 .ui-carousel .ui-carousel-header .ui-carousel-header-title {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: $fw_level2;
+}
+
+.ui-carousel .ui-carousel-header {
+  padding: .4em .75em .1em .4em;
 }

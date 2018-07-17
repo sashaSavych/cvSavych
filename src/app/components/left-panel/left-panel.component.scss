@@ -1,73 +1,57 @@
+@import "../../../styles/variables";
+@import "../../../styles/styles";
+
 $menu_item_height: 30px;
 
-figure {
-  img {
-    max-width: 100%;
-    display: block;
-  }
+@mixin menu_item {
+  @extend .flex-center;
+  background-color: $cl_dark;
+  color: $cl_bright_text;
+  text-transform: uppercase;
+  height: $menu_item_height;
+  border-top: 2px solid $cl_border_dark;
+  border-bottom: 2px solid $cl_border_dark;
 }
 
 .my-name {
-  display: flex;
-  align-items: center;
+  @include menu_item;
   justify-content: center;
-  background-color: #33373d;
-  color: #ffff;
-  height: $menu_item_height;
-  text-transform: uppercase;
-  border-bottom: 1px solid #26292e;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .main-navigation-menu {
-  div {
-    display: flex;
+  .menu-navigation-item {
+    @include menu_item;
     justify-content: space-between;
-    align-items: center;
-    height: $menu_item_height;
     padding: 0 5% 0 10%;
-    text-decoration: none;
-    text-transform: uppercase;
     &:hover {
-      @extend .active;
-      cursor: pointer;
+      @extend .button-active-hover;
     }
   }
   .menu-navigation-item.active {
-    @extend .active;
-  }
-  .menu-navigation-item {
-    background-color: #33373d;
-    color: #ffff;
-    border-top: 2px solid #26292e;
-    border-bottom: 2px solid #26292e;
+    @extend .button-active;
   }
 }
 
-.active {
-  background-color: #065e52;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-}
-
-.footer {
-  > .social {
-    background-color: #33373d;
-    height: $menu_item_height;
-    display: flex;
-    > div {
-      width: 100%;
-      height: 100%;
-      border: 2px solid #33373d;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffff;
-      font-size: x-large;
-      text-decoration: none;
-      &:hover {
-        @extend .active;
-        cursor: pointer;
-      }
+.social {
+  background-color: $cl_dark;
+  height: $menu_item_height;
+  @extend .flex-center;
+  > div {
+    @extend .flex-center;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid $cl_border_dark;
+    border-bottom-color: $cl_border_bright;
+    color: $cl_bright_text;
+    font-size: x-large;
+    &:hover {
+      @extend .button-active-hover;
     }
   }
 }
+
