@@ -1,7 +1,12 @@
-<cv-block-title [title]="'Period'" [iconName]="'calendar'"></cv-block-title>
-<div *ngIf="from && to" class="date-info">
-  <span>{{from}}</span>
-  <span>&nbsp;-&nbsp;</span>
-  <span>{{to}}</span>
+<div class="period-container">
+  <div>
+    <cv-block-title [title]="'Period'" [iconName]="'calendar'"></cv-block-title>
+    <div *ngIf="from && to" class="date-info">
+      <span>{{from}}</span>
+      <span>&nbsp;-&nbsp;</span>
+      <span>{{to}}</span>
+    </div>
+  </div>
 </div>
+
 
