@@ -8,6 +8,7 @@
 
 .value-container {
   @extend .value-container;
+  margin-left: 40px;
   &:before {
     content: '';
     margin-left: -40px;
