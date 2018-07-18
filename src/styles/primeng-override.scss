@@ -19,6 +19,8 @@
 .ui-panel-title,
 .ui-carousel .ui-carousel-header .ui-carousel-header-title {
   text-transform: uppercase;
+  font-weight: $fw_level2;
+  color: $cl_colorful;
 }
 
 .ui-carousel {

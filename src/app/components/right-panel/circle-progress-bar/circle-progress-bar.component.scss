@@ -1,3 +1,5 @@
+@import "../../../../styles/variables";
+
 .bar-component {
   display: flex;
   flex-direction: column;
@@ -14,20 +16,4 @@
   canvas, p {
     position: absolute;
   }
-}
-
-p {
-  font-weight: 500;
-  color: #33373d;
-  text-transform: uppercase;
-}
-
-.value {
-  font-size: 20px;
-}
-
-.label {
-  font-size: 15px;
-  margin-top: 10px;
-  text-align: center;
 }

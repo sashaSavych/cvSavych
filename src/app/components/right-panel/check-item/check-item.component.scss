@@ -1,36 +1,5 @@
+@import "../../../../styles/variables";
+
 .check-container {
   display: flex;
-}
-
-.icon-container {
-  color: #ffffff;
-  padding: 10px;
-  background-color: #065e52;
-  &:hover {
-    cursor: pointer;
-    color: #065e52;
-    background-color: #ffffff;
-    transition-duration: 0.5s;
-  }
-  i {
-    width: 20px;
-    height: 20px;
-    text-align: center
-  }
-}
-
-.value-container {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 100%;
-  font-size: 0.65em;
-  background-color: #f3f4f7;
-  margin-left: 5px;
-  color: #065e52;
-  text-transform: uppercase;
-  span {
-    width: 100%;
-    text-align: center;
-  }
 }

@@ -1,42 +1,13 @@
 @import "../../../../styles/variables";
+@import "../../../../styles/styles";
 
 .contact-container {
   display: flex;
   margin-right: 20px
 }
 
-.icon-container {
-  color: $cl_container;
-  padding: 10px;
-  background-color: $cl_colorful;
-  transition-duration: $transition-duration;
-  &:hover {
-    cursor: pointer;
-    color: $cl_colorful;
-    background-color: $cl_container;
-    transition-duration: $transition-duration;
-  }
-  i {
-    width: 20px;
-    height: 20px;
-    text-align: center
-  }
-}
-
 .value-container {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 100%;
-  font-size: $fz_medium;
-  background-color: $cl_content;
-  margin-left: 40px;
-  color: $cl_colorful;
-  text-transform: uppercase;
-  span {
-    width: 100%;
-    text-align: center;
-  }
+  @extend .value-container;
   &:before {
     content: '';
     margin-left: -40px;

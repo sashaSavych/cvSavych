@@ -3,29 +3,13 @@
     <h2 class="my-name">{{'leftPanel.name' | translate}}</h2>
     <h3 class="my-specialization">{{'Front End developer' | translate}}</h3>
   </div>
+
   <p class="block-text about-me">
     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
     totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
     dicta sunt explicabo. Nemo enim ipsam voluptatem. Sed ut perspiciatis unde omnis iste natus error
     sit voluptatem accusantium doloremque laudantium.
   </p>
-  <div class="additional-panel">
-    <p-carousel headerText="Testimonials" [value]="advisers"
-                [circular]="'circular'" [numVisible]="1" [pageLinks]="advisers.length">
-      <ng-template let-car pTemplate="item">
-        <cv-testimonial-item></cv-testimonial-item>
-      </ng-template>
-    </p-carousel>
-  </div>
-
-  <p-panel class="additional-panel" header="Interests">
-    <div class="interests">
-      <div *ngFor="let interest of interests" class="interest">
-        <i class="fa fa-3x" [ngClass]="'fa-' + interest.iconName"></i>
-        <p>{{interest.label}}</p>
-      </div>
-    </div>
-  </p-panel>
 
   <p-panel class="additional-panel" header="Contacts">
     <div class="items-container">
@@ -44,6 +28,15 @@
     </div>
   </p-panel>
 
+  <div class="additional-panel">
+    <p-carousel headerText="Testimonials" [value]="advisers"
+                [circular]="'circular'" [numVisible]="1" [pageLinks]="advisers.length">
+      <ng-template let-car pTemplate="item">
+        <cv-testimonial-item></cv-testimonial-item>
+      </ng-template>
+    </p-carousel>
+  </div>
+
   <p-panel class="additional-panel" header="Additional information">
     <div class="items-container">
       <div class="ui-g-12 ui-md-6 ui-lg-3">
@@ -57,6 +50,15 @@
       </div>
       <div class="ui-g-12 ui-md-6 ui-lg-3">
         <cv-check-item [value]="'Permanent overtimes'" [positive]="false"></cv-check-item>
+      </div>
+    </div>
+  </p-panel>
+
+  <p-panel class="additional-panel" header="Interests">
+    <div class="interests">
+      <div *ngFor="let interest of interests" class="interest">
+        <i class="fa fa-3x" [ngClass]="'fa-' + interest.iconName"></i>
+        <p>{{interest.label}}</p>
       </div>
     </div>
   </p-panel>
