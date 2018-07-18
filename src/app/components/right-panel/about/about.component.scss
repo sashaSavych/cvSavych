@@ -5,6 +5,7 @@
   text-transform: uppercase;
   h2 {
     font-size: 1.5em;
+    color: $cl_colorful;
   }
   h3 {
     color: $cl_paragraph_text;
@@ -31,6 +32,7 @@
   justify-content: center;
   align-items: center;
   padding: 3px;
+  color: $cl_colorful;
   i {
     color: $cl_colorful;
   }
