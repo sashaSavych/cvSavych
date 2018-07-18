@@ -9,6 +9,8 @@ body {
   display: flow-root;
   background-color: $cl_container;
   padding: 10px;
+  max-height: calc(100vh - 101px);
+  overflow-y: scroll;
 }
 
 .additional-panel {

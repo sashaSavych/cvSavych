@@ -1,5 +1,5 @@
-<div class="main-container">
-  <p-panel header="Design">
+<div>
+  <p-panel class="additional-panel" header="Design">
     <div class="ui-g">
       <div class="ui-g-12 ui-md-12 ui-lg-6">
         <cv-dynamic-progress [maxValue]="59" [label]="'Photoshop'"></cv-dynamic-progress>
@@ -9,7 +9,7 @@
       </div>
     </div>
   </p-panel>
-  <p-panel header="Coding">
+  <p-panel class="additional-panel" header="Coding">
     <div class="ui-g">
       <div class="ui-g-12 ui-md-12 ui-lg-6">
         <cv-dynamic-progress [maxValue]="15" [label]="'Javascript'"></cv-dynamic-progress>
@@ -22,14 +22,14 @@
       </div>
     </div>
   </p-panel>
-  <p-panel header="Project management">
+  <p-panel class="additional-panel" header="Project management">
     <div class="ui-g">
       <div *ngFor="let a of ['Scrum', 'Kanban', 'Agile']" class="ui-g-12 ui-md-12 ui-lg-6">
         <cv-dynamic-progress [maxValue]="44" [label]="a"></cv-dynamic-progress>
       </div>
     </div>
   </p-panel>
-  <p-panel header="Assets">
+  <p-panel class="additional-panel" header="Assets">
     <div class="ui-g">
       <div class="ui-g-12 ui-md-12 ui-lg-6">
         <cv-dynamic-progress [maxValue]="59" [label]="'Creative'"></cv-dynamic-progress>
@@ -42,7 +42,7 @@
       </div>
     </div>
   </p-panel>
-  <p-panel header="Languages">
+  <p-panel class="additional-panel" header="Languages">
     <div class="bar-list ui-g">
       <div class="ui-g-6 ui-md-6 ui-lg-3">
         <cv-circle-progress-bar [barValue]="100" [label]="'Ukrainian'"></cv-circle-progress-bar>

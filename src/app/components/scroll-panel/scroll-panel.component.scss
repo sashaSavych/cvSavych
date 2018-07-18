@@ -1,0 +1,7 @@
+.scroll-container {
+  display: flow-root;
+  background-color: #ffffff;
+  padding: 10px;
+  max-height: calc(100vh - 101px);
+  overflow-y: scroll;
+}

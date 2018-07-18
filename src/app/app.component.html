@@ -5,9 +5,9 @@
     </div>
     <div class="ui-g-12 ui-md-8 ui-lg-9">
       <cv-params-panel></cv-params-panel>
-      <p-scrollPanel class="right-panel-container">
-        <router-outlet></router-outlet>
-      </p-scrollPanel>
+      <div #scrollContainer class="right-panel-container">
+        <router-outlet (activate)="onActivate($event, scrollContainer)"></router-outlet>
+      </div>
       <cv-footer></cv-footer>
     </div>
   </div>
