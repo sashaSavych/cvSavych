@@ -24,6 +24,10 @@ body {
   justify-content: space-between;
 }
 
+.period-container-border {
+  border-top: 1px solid $cl_colorful;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -43,7 +47,7 @@ body {
 // paragraph
 .block-text {
   color: $cl_paragraph_text;
-  font-size: $fz_medium;
+  font-size: $fz_large;
   text-align: justify;
 }
 
