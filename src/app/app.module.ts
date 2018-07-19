@@ -45,6 +45,7 @@ import { CircleProgressBarComponent } from './components/right-panel/circle-prog
 import { ContactItemComponent } from './components/right-panel/contact-item/contact-item.component';
 import { CheckItemComponent } from './components/right-panel/about/check-item/check-item.component';
 import { ScrollPanelComponent } from './components/scroll-panel/scroll-panel.component';
+import { ProfileImageComponent } from './components/profile-image/profile-image.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -74,7 +75,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     CircleProgressBarComponent,
     ContactItemComponent,
     CheckItemComponent,
-    ScrollPanelComponent
+    ScrollPanelComponent,
+    ProfileImageComponent
   ],
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,

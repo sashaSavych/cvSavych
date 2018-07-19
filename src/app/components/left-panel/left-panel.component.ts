@@ -10,8 +10,7 @@ export class LeftPanelComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {  }
 
   openSocial(socialName: string): void {
     window.open(GLOBALS.social[socialName], '_blank');
