@@ -29,22 +29,21 @@ import { SocialComponent } from './components/right-panel/social/social.componen
 import { InfoRowComponent } from './components/right-panel/info-row/info-row.component';
 import { FooterComponent } from './components/right-panel/footer/footer.component';
 import { DynamicProgressComponent } from './components/right-panel/dynamic-progress/dynamic-progress.component';
-import { ExperienceItemComponent } from './components/right-panel/experience-item/experience-item.component';
+import { ExperienceItemComponent } from './components/right-panel/experience/experience-item/experience-item.component';
 
 import { AppComponent } from './app.component';
 import { LeftPanelComponent } from './components/left-panel/left-panel.component';
 import { LoginComponent } from './components/login/login.component';
-import { CounterComponent } from './components/language-switcher/language-switcher.component';
+import { LanguageSwitcherComponent } from './components/params-panel/language-switcher/language-switcher.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ParamsPanelComponent } from './components/params-panel/params-panel.component';
-import { BlockTitleComponent } from './components/block-title/block-title.component';
-import { PeriodItemComponent } from './components/period-item/period-item.component';
-import { PeriodDividerComponent } from './components/period-divider/period-divider.component';
-import { EducationItemComponent } from './components/education-item/education-item.component';
-import { TestimonialItemComponent } from './components/testimonial-item/testimonial-item.component';
+import { BlockTitleComponent } from './components/right-panel/block-title/block-title.component';
+import { PeriodItemComponent } from './components/right-panel/period-item/period-item.component';
+import { EducationItemComponent } from './components/right-panel/education/education-item/education-item.component';
+import { TestimonialItemComponent } from './components/right-panel/testimonial-item/testimonial-item.component';
 import { CircleProgressBarComponent } from './components/right-panel/circle-progress-bar/circle-progress-bar.component';
 import { ContactItemComponent } from './components/right-panel/contact-item/contact-item.component';
-import { CheckItemComponent } from './components/right-panel/check-item/check-item.component';
+import { CheckItemComponent } from './components/right-panel/about/check-item/check-item.component';
 import { ScrollPanelComponent } from './components/scroll-panel/scroll-panel.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -56,7 +55,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     LeftPanelComponent,
     LoginComponent,
-    CounterComponent,
+    LanguageSwitcherComponent,
     NotFoundComponent,
     AboutComponent,
     SkillsComponent,
@@ -70,7 +69,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     ExperienceItemComponent,
     BlockTitleComponent,
     PeriodItemComponent,
-    PeriodDividerComponent,
     EducationItemComponent,
     TestimonialItemComponent,
     CircleProgressBarComponent,

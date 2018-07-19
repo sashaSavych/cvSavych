@@ -1,8 +1,8 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {Store} from 'redux';
-import {AppState} from '../../app.state';
+import {AppState} from '../../../app.state';
 import * as LanguageActions from './language-switcher.actions';
-import {AppStore} from '../../app.store';
+import {AppStore} from '../../../app.store';
 import {TranslateService} from '@ngx-translate/core';
 
 @Component({
@@ -10,7 +10,7 @@ import {TranslateService} from '@ngx-translate/core';
   templateUrl: './language-switcher.component.html',
   styleUrls: ['./language-switcher.component.scss']
 })
-export class CounterComponent implements OnInit {
+export class LanguageSwitcherComponent implements OnInit {
 
   constructor(@Inject(AppStore) private store: Store<AppState>,
               public translateService: TranslateService) {

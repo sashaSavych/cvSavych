@@ -1,0 +1,39 @@
+@import "../../../../styles/variables";
+
+.period-container {
+  .period-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+  }
+  height: 100%;
+  background-color: $cl_content;
+  border-top: 1px solid $cl_colorful;
+  border-bottom: 1px solid $cl_colorful;
+  padding-left: 5px;
+  transition-duration: $transition-duration;
+  &:hover {
+    background-color: $cl_container;
+    transition-duration: $transition-duration;
+    cursor: pointer;
+    border-top: 1px solid $cl_container;
+    border-bottom: 1px solid $cl_container;
+    cv-block-title {
+      visibility: hidden;
+    }
+  }
+}
+
+.date-info {
+  display: flex;
+  margin: 0 5px 0 0;
+  span {
+    text-align: center;
+    font-size: $fz_large;
+    font-weight: $fw_level3;
+    text-transform: uppercase;
+  }
+}
+
+

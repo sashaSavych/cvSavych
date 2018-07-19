@@ -1,5 +1,5 @@
 import { Reducer } from 'redux';
-import { AppState } from '../../app.state';
+import { AppState } from '../../../app.state';
 import { LanguageAction } from './language-switcher.model';
 
 const initialState: AppState = { language: 'en' };

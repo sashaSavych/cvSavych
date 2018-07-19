@@ -2,7 +2,7 @@ import { InjectionToken } from '@angular/core';
 import { createStore, Store, compose, StoreEnhancer } from 'redux';
 
 import { AppState } from './app.state';
-import { CounterReducer as reducer} from './components/language-switcher/language-switcher.reducer';
+import { CounterReducer as reducer} from './components/params-panel/language-switcher/language-switcher.reducer';
 
 export const AppStore = new InjectionToken('App.store');
 
