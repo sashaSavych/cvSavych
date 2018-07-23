@@ -25,8 +25,7 @@
         "styles/reset.css",
         "styles/normalize.scss",
         "styles/styles.scss",
-        "styles/primeng-override.scss",
-        "../node_modules/auth0-js/build/auth0.js"
+        "styles/primeng-override.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

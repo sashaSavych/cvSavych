@@ -9,7 +9,6 @@ import {RouterModule} from '@angular/router';
 
 // core
 import {AppStoreProviders} from './app.store';
-import {AuthService} from './auth/auth.service';
 import {ROUTES} from './app.routing';
 
 // primeNG
@@ -33,7 +32,6 @@ import { ExperienceItemComponent } from './components/right-panel/experience/exp
 
 import { AppComponent } from './app.component';
 import { LeftPanelComponent } from './components/left-panel/left-panel.component';
-import { LoginComponent } from './components/login/login.component';
 import { LanguageSwitcherComponent } from './components/params-panel/language-switcher/language-switcher.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ParamsPanelComponent } from './components/params-panel/params-panel.component';
@@ -55,7 +53,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     LeftPanelComponent,
-    LoginComponent,
     LanguageSwitcherComponent,
     NotFoundComponent,
     AboutComponent,
@@ -96,7 +93,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CarouselModule,
     ScrollPanelModule
   ],
-  providers: [AuthService, AppStoreProviders],
+  providers: [AppStoreProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import {LoginComponent} from './components/login/login.component';
 import {NotFoundComponent} from './components/not-found/not-found.component';
 import {AboutComponent} from './components/right-panel/about/about.component';
 import {SkillsComponent} from './components/right-panel/skills/skills.component';
@@ -16,7 +15,6 @@ export const ROUTES: Routes = [
   { path: 'education', component: EducationComponent },
   { path: 'social/:url', component: SocialComponent },
 
-  { path: 'login', component: LoginComponent },
   { path: 'not-found', component: NotFoundComponent },
   { path: '**', redirectTo: 'not-found' }
 ];
