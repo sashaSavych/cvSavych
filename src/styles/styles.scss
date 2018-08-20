@@ -10,7 +10,7 @@ body {
   background-color: $cl_container;
   padding: 10px;
   max-height: calc(100vh - 101px);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .additional-panel {
@@ -82,12 +82,6 @@ button {
 }
 
 // custom components
-cv-period-divider {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-}
-
 cv-check-item, cv-contact-item {
   .icon-container {
     color: $cl_container;
