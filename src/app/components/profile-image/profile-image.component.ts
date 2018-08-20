@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-image.component.scss']
 })
 export class ProfileImageComponent implements OnInit {
-  profileImages = ['profile', 'profile2', 'profile3'];
+  profileImages = ['profile1', 'profile2'];
   currentImage = this.profileImages[0];
 
   constructor() { }

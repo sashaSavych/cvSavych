@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {GLOBALS} from '../../../assets/globals';
+import {MENU_ITEMS, SOCIAL_NETWORKS} from './left-panel.config';
 
 @Component({
   selector: 'cv-left-panel',
@@ -7,13 +7,16 @@ import {GLOBALS} from '../../../assets/globals';
   styleUrls: ['./left-panel.component.scss']
 })
 export class LeftPanelComponent implements OnInit {
+  readonly menuItems = MENU_ITEMS;
+  readonly socialNetworks = SOCIAL_NETWORKS;
+
 
   constructor() { }
 
   ngOnInit() {  }
 
-  openSocial(socialName: string): void {
-    window.open(GLOBALS.social[socialName], '_blank');
+  openSocial(link: string): void {
+    window.open(link, '_blank');
   }
 
 }
