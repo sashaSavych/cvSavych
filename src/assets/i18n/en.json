@@ -9,11 +9,10 @@
   },
   "rightPanel": {
     "about": {
+      "summary": "Software Developer with 4YOE in various programming directions (Front End: JS 3YOE, Angular2+ 1.5YOE, Back End, integrations and DBs).",
+      "objective": "I am keen on Front-End development. My goal is to build high-class software solutions in a team of professionals. Preferable technologies: JS, Angular, NodeJS.",
       "contacts": {
-        "name": {
-          "label": "Name",
-          "value": "Oleksandr Savych"
-        },
+        "contacts": "Contacts",
         "dateOfBirth": {
           "label": "Date of birth",
           "value": "March 22, 1992"
@@ -23,7 +22,7 @@
           "value": "Kyiv, Ukraine"
         },
         "email": {
-          "label": "Email",
+          "label": "E-mail",
           "value": "oleksandr.i.savych@gmail.com"
         },
         "phone": {
@@ -34,6 +33,40 @@
           "label": "Skype",
           "value": "sasha_savych"
         }
+      },
+      "testimonials": {
+        "testimonials": "Testimonials",
+        "name": "Name",
+        "position": "Position",
+        "olesiaShybkaya": {
+          "name": "Olesia Shybkaia",
+          "position": "Head of Marketing",
+          "testimonial": "I am happy to recommend Alex as a skillful professional, for he is a valuable asset to any company. His ability to access risks, to be consistent, reliable and result-oriented makes the whole team sure that all the terms will be fulfilled on time and with the brilliant outcome. One more important thing to mention is Alex’s desire to develop professionally and personally. He has three Master's degrees, including European diploma – Master’s degree in IT Project Management, Fachhochschule Dortmund. Additionally, Alex is constantly boosting his hard skills attending practical courses and conferences. Alex is not afraid to take risks and often suggests new directions to explore, which makes any project innovative and successful. He is committed to quality, growth, and progress, and he inspires his team members to strive for the same. Nevertheless, he is an easy-going pro, with a positive attitude for troubleshooting."
+        },
+        "oleksandrMakiian": {
+          "name": "Oleksandr Makiian",
+          "position": "Project Manager",
+          "testimonial": "Oleksandr showed high level of professionalism and knowledge in complex integration project. Also he has a lot of professional and communicational qualities. I can recommend him as a skilled developer and good team member."
+        },
+        "oleksandrShchuruk": {
+          "name": "Oleksandr Shchuruk",
+          "position": "Test Engineer",
+          "testimonial": "I can recommend Oleksandr as a highly skilled software developer and a professional that is result-oriented and eager to bring quality to the project he works on. As a Quality Control engineer, I see that Oleksandr do his work carefully and attentively and it definitely leads to satisfying result. The communication is always smooth and all problems are resolved quickly and effectively. Oleksandr proved to be a person that is able to work on complex projects that involve a lot of responsibility, critical thinking and technical skills. He is always ready to learn and improve his skills further. \r\n Oleksandr is also a great team player as he is always ready to ask for advice, to help others when his help is needed and to accept feedback about his work. I can definitely say that he is a great person to have in team."
+        }
+      },
+      "additionalInformation": {
+        "additionalInformation": "Additional information",
+        "relocate": "Ready to relocate",
+        "employmentForm": "Fulltime / remote / parttime",
+        "studying": "Ready for studying",
+        "overtimes": "Permanent overtimes"
+      },
+      "interests": {
+        "interests": "Interests",
+        "traveling": "Traveling",
+        "technologies": "Technologies",
+        "boardgames": "Boardgames",
+        "sport": "Sport"
       }
     }
   }

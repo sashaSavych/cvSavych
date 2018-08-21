@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ADDITIONAL_INFORMATION, CONTACTS, INTERESTS, TESTIMONIALS} from './about.config';
 
 @Component({
   selector: 'cv-about',
@@ -6,30 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  advisers: any[];
+  readonly contacts = CONTACTS;
+  readonly testimonials = TESTIMONIALS;
+  readonly additionalInformationItems = ADDITIONAL_INFORMATION;
+  readonly interests = INTERESTS;
 
-  interests: {iconName: string; label: string}[] = [
-    {
-      iconName: 'suitcase',
-      label: 'Traveling'
-    },
-    {
-      iconName: 'gamepad',
-      label: 'Technologies'
-    },
-    {
-      iconName: 'puzzle-piece',
-      label: 'Boardgames'
-    },
-    {
-      iconName: 'futbol-o',
-      label: 'Sport'
-    }
-  ];
-
-  constructor() {
-    this.advisers = Array(3);
-  }
+  constructor() {  }
 
   ngOnInit() {  }
 

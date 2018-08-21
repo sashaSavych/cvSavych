@@ -5,60 +5,41 @@
   </div>
 
   <p class="block-text about-me">
-    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-    dicta sunt explicabo. Nemo enim ipsam voluptatem. Sed ut perspiciatis unde omnis iste natus error
-    sit voluptatem accusantium doloremque laudantium.
+    {{'rightPanel.about.summary' | translate}}
+    {{'rightPanel.about.objective' | translate}}
   </p>
 
-  <p-panel class="additional-panel" header="Contacts">
+  <p-panel class="additional-panel" header="{{'rightPanel.about.contacts.contacts' | translate}}">
     <div class="items-container">
-      <div class="ui-g-12 ui-md-12 ui-lg-6">
-        <cv-contact-item [iconName]="'envelope'" [value]="'oleksandr.i.savych@gmail.com'" ></cv-contact-item>
-      </div>
-      <div class="ui-g-12 ui-md-12 ui-lg-6">
-        <cv-contact-item [iconName]="'phone'" [value]="'+38 (063) 584 77 00'" ></cv-contact-item>
-      </div>
-      <div class="ui-g-12 ui-md-12 ui-lg-6">
-        <cv-contact-item [iconName]="'map-marker'" [value]="'Kyiv, Ukraine'" ></cv-contact-item>
-      </div>
-      <div class="ui-g-12 ui-md-12 ui-lg-6">
-        <cv-contact-item [iconName]="'link'" [value]="'www.google.com'" ></cv-contact-item>
+      <div *ngFor="let contact of contacts" class="ui-g-12 ui-md-12 ui-lg-6">
+        <cv-contact-item [iconName]="contact.iconName" [value]="contact.value | translate"
+                         [title]="contact.label | translate"  ></cv-contact-item>
       </div>
     </div>
   </p-panel>
 
   <div class="additional-panel">
-    <p-carousel headerText="Testimonials" [value]="advisers"
-                [circular]="'circular'" [numVisible]="1" [pageLinks]="advisers.length">
-      <ng-template let-car pTemplate="item">
-        <cv-testimonial-item></cv-testimonial-item>
+    <p-carousel headerText="{{'rightPanel.about.testimonials.testimonials' | translate}}" [value]="testimonials"
+                [circular]="'circular'" [numVisible]="1" [pageLinks]="testimonials.length">
+      <ng-template let-testimonial pTemplate="item">
+        <cv-testimonial-item [personKey]="testimonial"></cv-testimonial-item>
       </ng-template>
     </p-carousel>
   </div>
 
-  <p-panel class="additional-panel" header="Additional information">
+  <p-panel class="additional-panel" header="{{'rightPanel.about.additionalInformation.additionalInformation' | translate}}">
     <div class="items-container">
-      <div class="ui-g-12 ui-md-6 ui-lg-3">
-        <cv-check-item [value]="'Ready to relocate'"></cv-check-item>
-      </div>
-      <div class="ui-g-12 ui-md-6 ui-lg-3">
-        <cv-check-item [value]="'Fulltime / remote'"></cv-check-item>
-      </div>
-      <div class="ui-g-12 ui-md-6 ui-lg-3">
-        <cv-check-item [value]="'Ready for studying'"></cv-check-item>
-      </div>
-      <div class="ui-g-12 ui-md-6 ui-lg-3">
-        <cv-check-item [value]="'Permanent overtimes'" [positive]="false"></cv-check-item>
+      <div *ngFor="let additionalInformationItem of additionalInformationItems" class="ui-g-12 ui-md-6 ui-lg-3">
+        <cv-check-item [value]="additionalInformationItem.key | translate" [positive]="additionalInformationItem.flag"></cv-check-item>
       </div>
     </div>
   </p-panel>
 
-  <p-panel class="additional-panel" header="Interests">
+  <p-panel class="additional-panel" header="{{'rightPanel.about.interests.interests' | translate}}">
     <div class="interests">
       <div *ngFor="let interest of interests" class="interest">
         <i class="fa fa-3x" [ngClass]="'fa-' + interest.iconName"></i>
-        <p>{{interest.label}}</p>
+        <p>{{interest.key | translate}}</p>
       </div>
     </div>
   </p-panel>
