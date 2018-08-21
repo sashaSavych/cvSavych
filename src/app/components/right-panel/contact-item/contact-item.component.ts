@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ContactItemComponent implements OnInit {
   @Input() iconName = '';
   @Input() value = '';
+  @Input() title = '';
 
   constructor() { }
 
