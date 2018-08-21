@@ -1,22 +1,21 @@
 <div class="testimonial-container">
   <figure>
-    <img src="../../../../assets/img/testimonials/osh.jpg" alt=""/>
+    <img [src]="'../../../../assets/img/testimonials/'+ personKey + '.jpg'" alt=""/>
   </figure>
-  <div>
+  <div class="testimonial-text">
     <div class="block-panel">
       <div>
-        <cv-block-title [title]="'Name'" [iconName]="'user'"></cv-block-title>
-        <p class="uppercase-name">Oleksandr Savych</p>
+        <cv-block-title [title]="'rightPanel.about.testimonials.name' | translate" [iconName]="'user'"></cv-block-title>
+        <p class="uppercase-name">{{'rightPanel.about.testimonials.' + personKey + '.name' | translate}}</p>
       </div>
       <div>
-        <cv-block-title [title]="'Position'" [iconName]="'briefcase'"></cv-block-title>
-        <p class="uppercase-name">CEO</p>
+        <cv-block-title [title]="'rightPanel.about.testimonials.position' | translate"
+                        [iconName]="'briefcase'"></cv-block-title>
+        <p class="uppercase-name">{{'rightPanel.about.testimonials.' + personKey + '.position' | translate}}</p>
       </div>
     </div>
     <p class="feedback block-text">
-      Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt labore et dolore magna aliqua. Ut
-      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat inventore
-      veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      {{'rightPanel.about.testimonials.' + personKey + '.testimonial' | translate}}
     </p>
   </div>
 </div>
